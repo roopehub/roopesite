@@ -46,4 +46,7 @@
         width: 3.5vh;
         height: 3.5vh;
     }
+    .Header h2 {
+        margin: 0;
+    }
 }
