@@ -3,6 +3,7 @@ import classes from './CustomPopup.module.css'
 import { Popup } from 'react-leaflet';
 
 class CustomPopup extends Component {
+
     render() {
 
         let content = null;
@@ -16,9 +17,11 @@ class CustomPopup extends Component {
                         My goal is to be able to combine geography with programming.
                         I aim to study GIS with computer science and physical geography.
                         I like to hike and practice culinaristic manners!
-                        <hr />
-                        <i>Click links or markers for more!</i>
-                        </p>
+                    </p>
+                    <br/>
+                    <i>Click links or markers for more!</i>
+                    <hr />
+                    <p>Contact me: roope.heinonen94@gmail.com</p>
                 </React.Fragment>
                 break;
             case 2:
@@ -34,12 +37,42 @@ class CustomPopup extends Component {
             case 3:
                 content = 
                 <React.Fragment>
-                    <p>Here's my most noticable projects</p>
-                    <a href="https://opiskalija.herokuapp.com"> img </a>
-                    <div>
-                        <h3>Opiskalija</h3>
-                        <i>Cheapest beers in bars visualized, find the cheapest beer and get there asap!</i>
+                    <h3>Here are my most noticable projects</h3>
+
+                    <a href="https://opiskalija.herokuapp.com" target="_blank" rel="noopener noreferrer"> 
+                        <div className={classes.Project} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1543791959-12b3f543282a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)'}}>
+                            {/* <img src="" alt="beers image"/> */}
+                            <div className={classes.ProjectContent}>
+                                <h3> <strong style={{color: 'lightBlue'}}>New! </strong>Opiskalija</h3>
+                                <i>Cheapest beers in bars visualized, find the cheapest beer and get there asap!</i>
+                            </div>
+                        </div>
+                    </a>
+                    <br/>
+                    <div className={classes.Project} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1447279506476-3faec8071eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)'}}>
+                        <div className={classes.ProjectContent}>
+                            <h3> <strong style={{color: 'green'}}>Coming soon! </strong>Le cheff - recipes</h3>
+                            <i>The only recipe book you'll ever need again!</i>
+                        </div>
                     </div>
+                    <br/>
+                    <a href="https://roopeheinonen.netlify.com/#/" target="_blank" rel="noopener noreferrer"> 
+                        <div className={classes.Project} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)'}}>
+                            <div className={classes.ProjectContent}>
+                                <h3>Old Roopesite</h3>
+                                <i>Cv & portfolio site: one of my first frontend projects (using Angular 1)</i>
+                            </div>
+                        </div>
+                    </a>
+                    <br/>
+                    <a href="https://squadapp.netlify.com/" target="_blank" rel="noopener noreferrer"> 
+                        <div className={classes.Project} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)'}}>
+                            <div className={classes.ProjectContent}>
+                                <h3><strong style={{color: 'red'}}>Not working atm.</strong> Squadapp</h3>
+                                <i>Listing my squad according competitive MMR (match making ranking) + statistics. </i>
+                            </div>
+                        </div>
+                    </a>
                 </React.Fragment>
                 break;
             case 4: 
@@ -73,7 +106,9 @@ class CustomPopup extends Component {
 
         return (
             <Popup className={classes.Popup}>
-                <img src={this.props.item.image} />
+                {
+                    this.props.item.image ? <img src={this.props.item.image} /> : null
+                }
                 <h2>{this.props.item.name}</h2>
                 { content }
             </Popup>

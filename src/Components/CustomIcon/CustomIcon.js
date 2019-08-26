@@ -1,8 +1,8 @@
 import L from 'leaflet';
 
 export const CustomIcon = new L.Icon({
-    iconUrl: require('../../Assets/Images/icon.png'),
-    iconRetinaUrl: require('../../Assets/Images/icon.png'),
+    iconUrl: require('../../Assets/Images/icon2.png'),
+    iconRetinaUrl: require('../../Assets/Images/icon2.png'),
     iconSize: [35, 46],
     iconAnchor: [17, 46],
     shadowUrl: null,

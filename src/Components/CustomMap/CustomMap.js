@@ -7,8 +7,8 @@ import CustomMarkers from '../CustomMarkers/CustomMarkers';
 
 class CustomMap extends Component {
     state = {
-        startPos: [60.227617, 25.012640],
-        startZoom: 14
+        startPos: [60.25, 25.012640],
+        startZoom: 13
     }
     render() {
         return (

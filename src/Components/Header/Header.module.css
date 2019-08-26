@@ -36,3 +36,14 @@
    margin-left: 5px;
    margin-top: -10px;
 }
+
+@media (max-width: 500px) {
+    .Header {
+        display: table;
+        text-align: center;
+    }
+    .Header img {
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+}
