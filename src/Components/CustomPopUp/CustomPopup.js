@@ -3,11 +3,8 @@ import classes from './CustomPopup.module.css'
 import { Popup } from 'react-leaflet';
 
 class CustomPopup extends Component {
-
     render() {
-
         let content = null;
-
         switch(this.props.item.id) {
             case 1:
                 content = 
