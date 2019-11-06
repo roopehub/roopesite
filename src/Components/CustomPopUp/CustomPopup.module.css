@@ -20,6 +20,7 @@
 
 .Popup {
     overflow-y: scroll;
+    max-height: 70vh;
 }
 
 .Popup::-webkit-scrollbar-track
