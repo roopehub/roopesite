@@ -5,7 +5,6 @@ import { CustomIcon } from '../CustomIcon/CustomIcon';
 import classes from './CustomMarker.module.css';
 
 const customMarker = (props) =>  {
-
     const initMarker = ref => {
         if (ref) {
           ref.leafletElement.openPopup()
