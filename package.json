@@ -136,6 +136,6 @@
     ]
   },
   "devDependencies": {
-    "react-dev-utils": "^9.0.3"
+    "react-dev-utils": "^9.1.0"
   }
 }
