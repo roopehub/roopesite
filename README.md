@@ -1,6 +1,6 @@
 <h1>Jou man chicago!</h1>
 
-<span style="color=red;"> Notice! There has been some issues with heroku and npm versions, the site might not work (if I haven't yet fixed it)</span>
+<p style="color:red"> Notice! There has been some issues with heroku and npm versions, the site might not work (if I haven't yet fixed it)</p>
 
 I created simple but neat geography themed cv/portfolio site for me (code base from my other site opiskalija.herokuapp.com, go and check that out too!). 
 
