@@ -1,4 +1,4 @@
-Jou man chicago!
+<h1>Jou man chicago!</h1>
 
 <div style="color:red"> Notice! There has been some issues with heroku and npm versions, the site might not work (if I haven't yet fixed it)</div>
 
