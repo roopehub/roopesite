@@ -2,6 +2,10 @@
   "name": "roopesite",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.10.2"
+  },
   "dependencies": {
     "@babel/core": "7.5.5",
     "@svgr/webpack": "4.3.2",
