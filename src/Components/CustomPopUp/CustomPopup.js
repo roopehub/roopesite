@@ -32,10 +32,6 @@ class CustomPopup extends Component {
                     <a href="https://blogs.helsinki.fi/hcroope/" target="_blank" rel="noopener noreferrer">
                         <p style={{textDecoration: 'underline', color: 'turquoise'}}>Blog from one of first GIS courses</p>
                     </a>
-                    <div>
-                        <img src="https://i.ibb.co/LnRPfww/closest-facility.png" alt="img map" />
-                        <img src="https://i.ibb.co/6FtKMsV/location-allocation.png" alt="img map" />
-                    </div>
                 </React.Fragment>
                 break;
             case 3:

@@ -31,7 +31,7 @@ class CustomMarkers extends Component {
                     id: 1,
                     coordinates: [60.227617, 25.012640],
                     name: 'Roope',
-                    image: 'https://i.ibb.co/CH61b4K/Screenshot-20190813-214017-01.jpg'                    
+                    image: 'https://i.imgur.com/adCRPsF.jpg'                    
                 }
             ]
         }
