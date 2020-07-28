@@ -1,6 +1,6 @@
 .Header {
     color: #fff;
-    height: 15vh;
+    height: 13vh;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #239f95;
+    background-color: #FFC0CB;
     z-index: 1000;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, .5);
 }
@@ -23,18 +23,13 @@
 }
 
 .Header img {
-    width: 7.5vh;
-    height: 7.5vh;
-    border-radius: 100%;
-    border: 2px solid #fff;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, .5);
+    width: 20vh;
+    height: 10vh;
+    top: 0;
 }
 
 .Header i {
    color: #ccc;
-   font-size: 60%;
-   margin-left: 5px;
-   margin-top: -10px;
 }
 
 @media (max-width: 500px) {
