@@ -8,10 +8,30 @@ class CustomMarkers extends Component {
         this.state = {
             data: [
                 {
+                    id: 2,
+                    coordinates: [60.204776, 24.962420],
+                    name: 'Geography',
+                    image: 'https://images.unsplash.com/photo-1529579134665-75dfc9c5ccef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+                    
+                },
+                {
+                    id: 3,
+                    coordinates: [60.196789, 24.951029],
+                    name: 'Projects',
+                    image: ''
+                    
+                },
+                {
+                    id: 4,
+                    coordinates: [60.201753, 24.933907],  
+                    name: 'Programming',
+                    image: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+                },
+                {
                     id: 1,
-                    coordinates: [61.0261711, 25.65371217],
-                    name: '',
-                    image: 'https://scontent-hel2-1.xx.fbcdn.net/v/t1.0-9/116164530_3657834690896837_1763624468134896719_o.jpg?_nc_cat=100&_nc_sid=02d79f&_nc_ohc=jrfkpNXaJf8AX9MeDN5&_nc_ht=scontent-hel2-1.xx&oh=0808989eeea56071697b0189647b2e4b&oe=5F46442D'                    
+                    coordinates: [60.227617, 25.012640],
+                    name: 'Roope',
+                    image: 'https://i.imgur.com/adCRPsF.jpg'                    
                 }
             ]
         }

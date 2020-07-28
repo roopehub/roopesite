@@ -5,7 +5,7 @@ import { withLeaflet } from 'react-leaflet';
 class Header extends Component {
 
     flyTo = (map, coord) => {
-        map.flyTo(coord, 10);
+        map.flyTo(coord, 16);
     }
 
     render() {
@@ -13,9 +13,11 @@ class Header extends Component {
 
         return (
             <div className={classes.Header}>
-                <h2>VIRALLINEN KESÄJUHLAT2020 APP</h2>
-                <br/>
-                <img src="https://scontent-hel2-1.xx.fbcdn.net/v/t1.0-9/116179044_3657788790901427_8864681093239598833_o.jpg?_nc_cat=109&_nc_sid=b386c4&_nc_ohc=4Uj-cOH5bL4AX-jKEof&_nc_ht=scontent-hel2-1.xx&oh=466d47591a6a2b2fcbaf7a3b087d0d49&oe=5F45B589"></img>
+                <h2 onClick={() => this.flyTo(map, [60.205, 24.933907])}>Programming</h2>
+                <h2 onClick={() => this.flyTo(map, [60.199, 24.951029])}>Projects</h2>
+                <img src="https://i.imgur.com/XdSAUnv.jpg" />
+                <h2 onClick={() => this.flyTo(map, [60.207, 24.962420])}>Geography</h2>
+                <h2 onClick={() => this.flyTo(map, [60.23, 25.012640])}>Me</h2>
             </div>
         )
     }
