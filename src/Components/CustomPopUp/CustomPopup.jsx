@@ -38,7 +38,7 @@ class CustomPopup extends Component {
                     <React.Fragment>
                         <p> I have bachelors in computer science (Haaga-helia university of applied sciences) and GIS MsC from University of Helsinki.</p>
                         <p>
-                            For my GIS master thesis, i coded <a href="https://github.com/DigitalGeographyLab/green-paths-2" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>a tool</a> for analyzing travel time exposure (utilizing Conveyal's r5 routing engine), which can be used in any place and with any relevant data.
+                            I did my masters thesis for GREENTRAVEL project, where i coded <a href="https://github.com/DigitalGeographyLab/green-paths-2" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>a tool</a> for analyzing travel time exposure (utilizing Conveyal's r5 routing engine), which can be used in any place and with any relevant data.
                         </p>
                         <p>
                             My <a href="https://helda.helsinki.fi/items/5b77f6c3-2d2c-455f-bb8c-528b0ac136d8" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>MsC thesis</a> was based around building this tool. I also honored to be mentioned in <a href="https://www.sciencedirect.com/science/article/pii/S0198971524000978" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>this article</a>.
@@ -48,6 +48,15 @@ class CustomPopup extends Component {
             case 3:
                 content =
                     <React.Fragment>
+                        <a href="https://github.com/roopehub" target="_blank" rel="noopener noreferrer">
+                            <div className={classes.Project} style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}>
+                                <div className={classes.ProjectContent}>
+                                    <h3>My Github</h3>
+                                    <i>University repos, hobby projects and some random stuff</i>
+                                </div>
+                            </div>
+                        </a>
+                        <br />
                         <a href="https://opiskalija.pages.dev/" target="_blank" rel="noopener noreferrer">
                             <div className={classes.Project} style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1543791959-12b3f543282a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)' }}>
                                 <div className={classes.ProjectContent}>

@@ -12,7 +12,7 @@ class CustomMarkers extends Component {
                     id: 2,
                     coordinates: [60.204, 24.962],
                     name: 'Studies',
-                    image: 'https://images.unsplash.com/photo-1529579134665-75dfc9c5ccef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+                    image: 'https://images.unsplash.com/photo-1579616043939-95d87a6e8512?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                     
                 },
                 {
