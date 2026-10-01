@@ -18,7 +18,7 @@ class CustomMap extends Component {
 
     state = {
         startPos: [60.188, 24.932],
-        startZoom: 13
+        startZoom: 12
     }
     render() {
         return (
