@@ -6,8 +6,18 @@ import CustomTileLayer from '../CustomTileLayer/CustomTileLayer';
 import CustomMarkers from '../CustomMarkers/CustomMarkers';
 
 class CustomMap extends Component {
+    markerRefs = {};
+
+    registerMarker = (name, marker) => {
+        if (marker) {
+            this.markerRefs[name] = marker;
+        } else {
+            delete this.markerRefs[name];
+        }
+    }
+
     state = {
-        startPos: [60.26, 25.012640],
+        startPos: [60.188, 24.932],
         startZoom: 13
     }
     render() {
@@ -17,9 +27,12 @@ class CustomMap extends Component {
                     center={this.state.startPos}
                     zoom={this.state.startZoom}
                     className={classes.Mapp}>
-                    <Header/>
+                    <Header markerRefs={this.markerRefs} />
                     <CustomTileLayer/>
-                    <CustomMarkers />
+                    <CustomMarkers
+                        markerRefs={this.markerRefs}
+                        onMarkerRef={this.registerMarker}
+                    />
                 </Map>
             </React.Fragment>
         );

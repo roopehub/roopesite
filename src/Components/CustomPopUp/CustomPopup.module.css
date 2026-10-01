@@ -18,9 +18,9 @@
     color: #fff;
 }
 
-.Popup {
-    overflow-y: scroll;
+.Popup :global(.leaflet-popup-content) {
     max-height: 70vh;
+    overflow-y: auto;
 }
 
 .Popup::-webkit-scrollbar-track
@@ -51,4 +51,15 @@
 .Popup a {
     text-decoration: none;
     color: #000;
+}
+
+.Next {
+    display: block;
+    margin: 16px 0 0 auto;
+    padding: 6px 0 2px 12px;
+    border: 0;
+    background: none;
+    color: #2563eb;
+    font: inherit;
+    cursor: pointer;
 }

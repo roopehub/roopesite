@@ -1,11 +1,42 @@
 import React, { Component } from 'react';
 import classes from './Header.module.css';
 import { withLeaflet } from 'react-leaflet';
+import RoopeImage from '../../assets/images/roope.jpg';
 
 class Header extends Component {
+    flyToMarker = (map, markerName) => {
+        if (this.pendingPopup) {
+            map.off('moveend', this.pendingPopup);
+        }
 
-    flyTo = (map, coord) => {
-        map.flyTo(coord, 16);
+        const targetMarker = this.props.markerRefs[markerName];
+
+        if (!targetMarker) {
+            return;
+        }
+
+        map.closePopup();
+        Object.keys(this.props.markerRefs).forEach(name => {
+            const marker = this.props.markerRefs[name];
+            if (marker !== targetMarker) {
+                marker.closePopup();
+            }
+        });
+
+        const position = targetMarker.getLatLng();
+        const openPopup = () => {
+            targetMarker.openPopup();
+            this.pendingPopup = null;
+        };
+
+        if (map.getCenter().equals(position) && map.getZoom() === 16) {
+            openPopup();
+            return;
+        }
+
+        this.pendingPopup = openPopup;
+        map.once('moveend', openPopup);
+        map.flyTo(position, 16);
     }
 
     render() {
@@ -13,15 +44,14 @@ class Header extends Component {
 
         return (
             <div className={classes.Header}>
-                <h2 onClick={() => this.flyTo(map, [60.205, 24.933907])}>Programming</h2>
-                <h2 onClick={() => this.flyTo(map, [60.199, 24.951029])}>Projects</h2>
-                <img src="https://i.imgur.com/XdSAUnv.jpg" />
-                <h2 onClick={() => this.flyTo(map, [60.207, 24.962420])}>Geography</h2>
-                <h2 onClick={() => this.flyTo(map, [60.23, 25.012640])}>Me</h2>
+                <h2 onClick={() => this.flyToMarker(map, 'Work Experience')}>Work Experience</h2>
+                <h2 onClick={() => this.flyToMarker(map, 'Projects')}>Hobby Project</h2>
+                <img src={RoopeImage} alt="Roope" />
+                <h2 onClick={() => this.flyToMarker(map, 'Studies')}>Studies</h2>
+                <h2 onClick={() => this.flyToMarker(map, 'Roope')}>Me</h2>
             </div>
-        )
+        );
     }
 }
-
 
 export default withLeaflet(Header);
