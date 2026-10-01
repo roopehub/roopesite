@@ -1,9 +1,28 @@
-<h1>Jou man chicago!</h1>
+# Roopesite
 
-<i>Notice! There has been some issues with heroku and npm versions, the site might not work (if I haven't yet fixed it) </i>
+A geography-themed portfolio built with React and React-Leaflet.
 
-I created simple but neat geography themed cv/portfolio site for me (code base from my other site opiskalija.herokuapp.com, go and check that out too!). 
+## Requirements
 
+- Node.js 24.x
+- npm 11.x
 
-The site uses mainly React and React-LeafletJS.
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Node version is recorded in `.nvmrc`.
+
+## Run locally
+
+```powershell
+nvm use 24.21.0
+npm install
+npm start
+```
+
+Open the local URL printed by Vite, usually http://localhost:5173.
+
+## Other commands
+
+```powershell
+npm test
+npm run build
+npm run preview
+```
