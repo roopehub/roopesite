@@ -101,7 +101,12 @@ class CustomPopup extends Component {
                 autoPanPaddingBottomRight={[12, 12]}
             >
                 {
-                    this.props.item.image ? <img src={this.props.item.image} /> : null
+                    this.props.item.image ? (
+                        <img
+                            src={this.props.item.image}
+                            style={this.props.item.id === 1 ? { width: '100%', height: '100%' } : undefined}
+                        />
+                    ) : null
                 }
                 <h2>{this.props.item.name}</h2>
                 {content}
