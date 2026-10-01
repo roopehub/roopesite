@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Header.module.css';
 import { withLeaflet } from 'react-leaflet';
-import RoopeImage from '../../assets/images/roope.jpg';
+import RoopeImage from '../../Assets/Images/Roope.jpg';
 
 class Header extends Component {
     flyToMarker = (map, markerName) => {
